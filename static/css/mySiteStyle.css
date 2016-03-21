@@ -1,0 +1,32 @@
+/*body{
+	background-color: #6FD3F7;
+}*/
+
+header{
+	background-color: #6FD3F7;
+	text-align: center;
+	padding:50px;
+
+}
+
+
+.myName{
+	font-size: 80px;
+	text-align: center;
+	width: 100%;
+}
+
+/*Essentially container*/
+.navBar{
+
+	font-size: 30px;
+	font-weight: 10px;
+}
+
+.navBarItem{
+	font-size: 50px;
+	font-family: "Bitter";
+	color:red;
+}
+
+
