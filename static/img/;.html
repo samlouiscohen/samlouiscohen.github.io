@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_doc_write2 -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Tryit Editor v2.6</title>
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./;_files/trystyle.css">
+<!--[if lt IE 8]>
+<style>
+.textareacontainer, .iframecontainer {width:48%;}
+.textarea, .iframe {height:800px;}
+#textareaCode, #iframeResult {height:700px;}
+.menu img {display:none;}
+</style>
+<![endif]-->
+<script async="" type="text/javascript" src="./;_files/gpt.js"></script><script async="" src="./;_files/analytics.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-3855518-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script><style type="text/css"></style>
+<script>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+<script type="text/javascript">
+ // GPT slots
+ var gptAdSlots = [];
+ googletag.cmd.push(function() {
+
+   var leaderMapping = googletag.sizeMapping().
+   // Mobile ad
+   addSize([0, 0], [320, 50]). 
+   // Vertical Tablet ad
+   addSize([468, 0], [468, 60]). 
+   // Horizontal Tablet
+   addSize([728, 0], [728, 90]).
+   // Desktop and bigger ad
+ addSize([970, 0], [[728, 90], [970, 90]]).build();
+// addSize([970, 0], [728, 90]).build();
+ gptAdSlots[0] = googletag.defineSlot('/16833175/TryitLeaderboard', [[728, 90], [970, 90]], 'div-gpt-ad-1428407818244-0').
+// gptAdSlots[0] = googletag.defineSlot('/16833175/TryitLeaderboard', [728, 90], 'div-gpt-ad-1428407818244-0').
+   defineSizeMapping(leaderMapping).addService(googletag.pubads());
+
+
+   googletag.pubads().setTargeting("content","tryjs");
+   googletag.enableServices();
+ });
+</script>
+<script>
+if (window.addEventListener) {              
+    window.addEventListener("resize", browserResize);
+} else if (window.attachEvent) {                 
+    window.attachEvent("onresize", browserResize);
+}
+var xbeforeResize = window.innerWidth;
+
+function browserResize() {
+    var afterResize = window.innerWidth;
+    if ((xbeforeResize < (970) && afterResize >= (970)) || (xbeforeResize >= (970) && afterResize < (970)) ||
+        (xbeforeResize < (728) && afterResize >= (728)) || (xbeforeResize >= (728) && afterResize < (728)) ||
+        (xbeforeResize < (468) && afterResize >= (468)) ||(xbeforeResize >= (468) && afterResize < (468))) {
+        xbeforeResize = afterResize;
+        googletag.cmd.push(function() {
+            googletag.pubads().refresh([gptAdSlots[0]]);
+        });
+    }
+}
+</script>
+<script type="text/javascript">
+function submitTryit() {
+  var text = document.getElementById("textareaCode").value;
+  var ifr = document.createElement("iframe");
+  ifr.setAttribute("frameborder", "0");
+  ifr.setAttribute("id", "iframeResult");  
+  document.getElementById("iframewrapper").innerHTML = "";
+  document.getElementById("iframewrapper").appendChild(ifr);
+  var ifrw = (ifr.contentWindow) ? ifr.contentWindow : (ifr.contentDocument.document) ? ifr.contentDocument.document : ifr.contentDocument;
+  ifrw.document.open();
+  ifrw.document.write(text);  
+  ifrw.document.close();
+  //23.02.2016: contentEditable is set to true, to fix text-selection (bug) in firefox.
+  //(and back to false to prevent the content from being editable)
+  //(To reproduce the error: Select text in the result window with, and without, the contentEditable statements below.)  
+  if (ifrw.document.body && !ifrw.document.body.isContentEditable) {
+    ifrw.document.body.contentEditable = true;
+    ifrw.document.body.contentEditable = false;
+  }
+}
+</script>
+<style>
+
+</style>
+<script src="./;_files/pubads_impl_82.js" async=""></script></head>
+<body>
+<div id="tryitLeaderboard">
+<!-- TryitLeaderboard -->
+<div id="div-gpt-ad-1428407818244-0">
+<script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1428407818244-0'); });</script>
+<div id="google_ads_iframe_/16833175/TryitLeaderboard_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/16833175/TryitLeaderboard_0" title="3rd party ad content" name="google_ads_iframe_/16833175/TryitLeaderboard_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;&lt;html&gt;&lt;body style=&#39;background:transparent&#39;&gt;&lt;/body&gt;&lt;/html&gt;&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div><iframe id="google_ads_iframe_/16833175/TryitLeaderboard_0__hidden__" title="" name="google_ads_iframe_/16833175/TryitLeaderboard_0__hidden__" width="0" height="0" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;&lt;html&gt;&lt;body style=&#39;background:transparent&#39;&gt;&lt;/body&gt;&lt;/html&gt;&quot;" style="border: 0px; vertical-align: bottom; visibility: hidden; display: none;"></iframe></div>
+</div>
+
+<div class="container">
+  <div class="textareacontainer">
+    <div class="textarea">
+      <div style="overflow:auto;">
+        <div class="headerText">Edit This Code:</div>
+        <button class="seeResult" type="button" onclick="submitTryit()">See Result »</button>
+      </div>
+      <div class="textareawrapper">
+        <textarea autocomplete="off" class="code_input" id="textareaCode" wrap="logical" spellcheck="false">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;script&gt;
+document.write("&lt;h1&gt;Hello World!&lt;/h1&gt;&lt;p&gt;Have a nice day!&lt;/p&gt;");
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+          <form autocomplete="off" style="margin:0px;display:none;">
+            <input type="hidden" name="code" id="code">
+            <input type="hidden" id="bt" name="bt">
+          </form>
+       </div>
+    </div>
+  </div>
+  <div class="iframecontainer">
+    <div class="iframe">
+      <div style="overflow:auto;">
+        <div class="headerText">Result:</div>
+      </div>
+      <div id="iframewrapper" class="iframewrapper"><iframe frameborder="0" id="iframeResult"></iframe></div>
+    </div>
+  </div>
+  <div class="footerText">Try it Yourself - © <a href="http://www.w3schools.com/">w3schools.com</a></div>      
+</div>
+<script>submitTryit()</script><iframe src="./;_files/container.html" width="0" height="0" style="visibility: hidden !important; display: none !important; opacity: 0 !important;"></iframe>
+
+</body></html>

@@ -3,17 +3,18 @@
 }*/
 
 header{
+	
 	background-color: #6FD3F7;
 	text-align: center;
-	padding:50px;
 
+	padding:50px;
 }
 
 
 .myName{
 	font-size: 80px;
 	text-align: center;
-	width: 100%;
+	top:10px;
 }
 
 /*Essentially container*/
@@ -35,4 +36,8 @@ header{
 	height:50px;
 	width:50px;
 
+}
+
+.aboutme{
+	font-size: 20px;
 }
