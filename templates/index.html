@@ -15,21 +15,33 @@
 	<meta name="keywords" content="Sam,Cohen,SamCohen,SamuelLouisCohen,Samuel,Louis,Columbia,Columbia University,Computer Science,cs,programming,programmer,Rockland County,New York,">
 	<meta name="author" content="Samuel Cohen">
 
+	<!--Css style sheets-->
 	<link rel="stylesheet" type="text/css" href="../static/css/mySiteStyle.css">
 
+
 	<!-- Include fonts here -->
+	<link href='https://fonts.googleapis.com/css?family=Nunito|Inconsolata|Noto+Serif|Merriweather|PT+Sans+Narrow|Hind|Lato' rel='stylesheet' type='text/css'>
 
 
 	<!-- 	Include processing.js for space survival -->
-	<script type="text/javascript" src="processing.js"></script>
-	<canvas id="myCanvas"></canvas>
+
+ <!-- run all the javascript stuff -->
+ <script src="processing-1.3.6.min.js"></script> <!-- Include the processing.js commands -->
+ <script src="Space_Survival.js"></script> <!-- The actual source code for your program -->
+ <script type="application/javascript">
+  var canvas = document.getElementById("mycanvas"); //get the canvas that processingjs will use
+  var processingInstance = new Processing(canvas, sketchProc); //pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+ </script>
+
 
 
 </head>
 
 
 <body>
-
+<!-- 
+	<canvas data-processing-sources="myProgram.pde"></canvas>
+<canvas id="myCanvas"></canvas> -->
 	<header>
 		<h1 class="myName">Samuel Cohen</h1>
 
@@ -40,15 +52,15 @@
 			</h2>
 		</div>
 
-		<div class="icons">
+		<div class="iconContainer">
 
 			<a href="https://github.com/samlouiscohen"><img src="../static/img/githubLogo.png" class="icon githubI"></a>
 
 			<a href="https://www.linkedin.com/in/samuellcohen"><img src="../static/img/linkedinLogo.png" class="icon linkedinI"></a>
 
-			<a href="mailto:slc2206@columbia.edu?Subject= Hey Sam"><img src="../static/img/mailLogo.png" class="icon githubI"></a>
+			<a href="mailto:slc2206@columbia.edu?Subject= Hey Sam"><img src="../static/img/mailLogo.png" class="icon mailI"></a>
 
-			<a href="https://www.facebook.com/sam.cohen.108"><img src="../static/img/facebookLogo.png" class="icon linkedinI"></a>
+			<a href="https://www.facebook.com/sam.cohen.108"><img src="../static/img/facebookLogo.png" class="icon facebookI"></a>
 
 		</div>
 
@@ -56,9 +68,11 @@
 <!--navbarItems,about, ect.-->
 	</header>
 
+
+
 <div class="aboutMe">
 
-<p>Hey there! My name is Sam, and I like Green Eggs and Ham</p>
+<p>Hey there! My name is <span style="color:red">Sam</span>, and I like <span style="color:green">Green Eggs and Ham</span></p>
 <p>I'm currently a sophmore at <strong>Columbia University</strong>. I'm studying computer engineering.</p>
 <p>I'm x days old!</p>
 
@@ -66,28 +80,6 @@
 
 <script>
 
-/*
-Count up from any date script-
-By JavaScript Kit (www.javascriptkit.com)
-Over 200+ free scripts here!
-*/
-
-var montharray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
-
-function countup(yr,m,d){
-var today=new Date()
-var todayy=today.getYear()
-if (todayy < 1000)
-todayy+=1900
-var todaym=today.getMonth()
-var todayd=today.getDate()
-var todaystring=montharray[todaym]+" "+todayd+", "+todayy
-var paststring=montharray[m-1]+" "+d+", "+yr
-var difference=(Math.round((Date.parse(todaystring)-Date.parse(paststring))/(24*60*60*1000))*1)
-document.write("I'm a whopping "+difference.toString().bold()+" days old!")
-}
-//enter the count up date using the format year/month/day
-countup(1996,05,12)
 </script>
 
 <!--School section jump-->
@@ -102,6 +94,12 @@ countup(1996,05,12)
 
 
 </body>
+
+
+
+
+
+
 
 
 </html>
