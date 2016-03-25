@@ -28,7 +28,7 @@ header{
 
 	font-size: 50px;
 	/*font-family: "Bitter";*/
-	color:black;
+	color:red;
 	text-decoration: none;
 	font-family: 'Lato', sans-serif;
 	
@@ -43,40 +43,53 @@ header{
 .iconContainer{
 	position: relative;
 	/*background-color:purple;*/
-	width:30vw;
+	width:40vw;
 	height:10vh;
 	margin:0 auto;
 }
 
 .githubI{
-	position:absolute;
-	top:15%;
-	left:20%;
+	margin-right: 5%;
+	/*position:absolute;*/
+/*	top:15%;
+	left:20%;*/
 }
 
 .linkedinI{
-	position:absolute;
-	top:15%;
-	left:35%;
+	margin-right: 5%;
+	/*position:absolute;*/
+/*	top:15%;
+	left:35%;*/
 }
 
 .mailI{
-	position:absolute;
-	top:15%;
-	left:50%;
+	margin-right: 5%;
+	/*position:absolute;*/
+/*	top:15%;
+	left:50%;*/
 }
 
 .facebookI{
-	position:absolute;
-	top:15%;
-	left:65%;
+	/*position:absolute;*/
+/*	top:15%;
+	left:65%;*/
 }
 
 
+.myface{
+	position:absolute;
+	transform:rotate(40deg);
+	right:20px;
+
+}
+
 .icon{
 	
-	height:50px;
-	width:50px;
+height:auto;
+width:auto;
+
+max-width:100%;
+max-height:100%;
 
 }
 
