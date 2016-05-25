@@ -26,12 +26,17 @@
 	<!-- 	Include processing.js for space survival -->
 
  <!-- run all the javascript stuff -->
- <script src="processing-1.3.6.min.js"></script> <!-- Include the processing.js commands -->
- <script src="Space_Survival.js"></script> <!-- The actual source code for your program -->
- <script type="application/javascript">
+ 	<script src="/js/processing.min.js"></script>
+
+
+ <!--<script src="processing-1.3.6.min.js"></script>--> <!-- Include the processing.js commands -->
+
+ <!--<script src="Space_Survival.js"></script>--> <!-- The actual source code for your program -->
+
+ <!--<script type="application/javascript">
   var canvas = document.getElementById("mycanvas"); //get the canvas that processingjs will use
   var processingInstance = new Processing(canvas, sketchProc); //pass the function sketchProc (defined in myCode.js) to Processing's constructor.
- </script>
+ </script>-->
 
 
 
@@ -39,7 +44,8 @@
 
 
 <body>
-<!-- 
+<!-- 	<canvas data-processing-sources="/js/Space_Survival.js"></canvas>
+ --><!-- 
 	<canvas data-processing-sources="myProgram.pde"></canvas>
 <canvas id="myCanvas"></canvas> -->
 	<header>
@@ -70,36 +76,33 @@
 
 
 
-<div class="aboutMe">
+	<div class="aboutMe">
 
-<p>Hey there! My name is <strong><span style="color:red">Sam</span></strong>, and I like <span style="color:green">Green Eggs and Ham</span></p>
-<p>I'm currently a sophmore at <strong>Columbia University</strong>. I'm studying <strong>computer engineering</strong>.</p>
-<p>I'm x days old!</p>
+	<p>Hey there! My name is <strong><span style="color:red">Sam</span></strong>, and I like <span style="color:green">Green Eggs and Ham</span></p>
+	<p>I'm currently a sophmore at <strong>Columbia University</strong>. I'm studying <strong>computer engineering</strong>.</p>
+	<p>I'm x days old!</p>
 
-<img src="../static/img/myface.png" class="myface">
+	<img src="../static/img/myface.png" class="myface">
 
-</div>
-
-
-<!--School section jump-->
-<a name="school"></a>
-<!-- School stuff here -->
+	</div>
 
 
+	<!--School section jump-->
+	<a name="school"></a>
+	<!-- School stuff here -->
 
 
 
 
+	<!--Video game stuff-->
+	<a name="games"></a>
+
+	<div id="Space_Survival_container">
+		<canvas data-processing-sources="/js/Space_Survival.js"></canvas>
+	</div>
 
 
 </body>
-
-
-<script src="../js/buttonChange.js"></script>
-
-
-
-
 
 </html>
 

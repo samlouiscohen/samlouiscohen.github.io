@@ -1,8 +1,11 @@
-		var sketchProc=function(processingInstance){ with (processingInstance){
+        // var sketchProc=function(processingInstance){ with (processingInstance){
 //ESTABLISH SETTINGS
 
+void setup(){
 size(400, 400); 
 frameRate(30);
+}
+
 
 //NOW THE PROGRAM
 
@@ -25,15 +28,22 @@ frameRate(30);
 
 
 //Establish "what" key word mouseIsPressed is, so I can use it later
-var mouseIsPressed=false;
 
-mousePressed=function(){
-    mouseIsPressed = true;
-};
+var mouseIsClicked = false;
+// var mouseIsPressed=false;
+
+// mousePressed=function(){
+//     mouseIsPressed = true;
+// };
     
-mouseReleased= function(){
-    mouseIsPressed = false;
-};
+// mouseReleased= function(){
+//     mouseIsPressed = false;
+// };
+
+mouseClicked = function(){
+    mouseIsClicked = true;
+}
+
 
 //timing variables
 var minutes=0;
@@ -339,8 +349,8 @@ Alien.prototype.move=function(){
 
 Alien.prototype.bound=function(){
 
-	
-	
+    
+    
     if(this.alienY>500){
         this.alienY=-100;
         this.alienX=random(400);
@@ -873,20 +883,20 @@ var drawScene=function(){
     
     //On Off side flip
     if(ship.x>450){
-	ship.x=0;
-	}
-	if(ship.x<0){
-	ship.x=400;
-	}
-	if(ship.y>450){
-	ship.y=0;
-	}
-	if(ship.y<0){
-	ship.y=400;
-	}
-	
-	
-	
+    ship.x=0;
+    }
+    if(ship.x<0){
+    ship.x=400;
+    }
+    if(ship.y>450){
+    ship.y=0;
+    }
+    if(ship.y<0){
+    ship.y=400;
+    }
+    
+    
+    
 
     
 };
@@ -900,8 +910,9 @@ var keyHandling = function() {
 };
 
 
-var keyPressed= function() { keys[keyCode] = true; };
-var keyReleased= function() { keys[keyCode] = false; }; 
+void keyPressed() { keys[keyCode] = true; };
+void keyReleased() { keys[keyCode] = false; }; 
+
 //BACKGROUND EYES
 var eyeContainer=[];
 var titleEyes=function(x,y,height,addedHeight,width,speed,timer){
@@ -1092,8 +1103,10 @@ var drawTitleScreen=function(){
     var distance=dist(bx1,by1,mouseX,mouseY);
     if(distance<25&&gameState==="titleScreen"){
         gameOnAlien2(bx1,by1);
-        if(mouseIsPressed){
+        if(mouseIsClicked){
             gameState="gameOn";
+            mouseIsClicked = false;
+
         }
         
     }
@@ -1101,8 +1114,9 @@ var drawTitleScreen=function(){
     var distance2=dist(bx2,by2,mouseX,mouseY);
     if(distance2<25&&gameState==="titleScreen"){
         instructionsAlien2(bx2,by2);
-        if(mouseIsPressed){
+        if(mouseIsClicked){
             gameState="instructions";
+            mouseIsClicked = false;
         }
     }
 };
@@ -1138,8 +1152,9 @@ var drawInstructionScreen=function(){
         fill(0, 0, 0);
         text("Home",buttonX+25,buttonY+20);
         
-        if(mouseIsPressed){
+        if(mouseIsClicked){
             gameState="titleScreen";
+            mouseIsClicked = false;
         }
         
     }
@@ -1268,13 +1283,19 @@ var drawGameOver=function(){
 };
 
 
-   
 
-var draw= function(){
+void draw(){
+// var draw= function(){
    
     switch(gameState){
         case "titleScreen":
             drawTitleScreen();
+            fill();
+            ellipse(mouseX,mouseY,10,10);
+            mousePressed=function(){
+                ellipse(mouseX,mouseY,50,50);
+            };
+
         break;
         
         case "instructions":
@@ -1306,7 +1327,8 @@ var draw= function(){
         break;
   }
 
-};
+// };
 
 
-		}};
+
+        };
