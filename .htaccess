@@ -1,3 +1,3 @@
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^samlouiscohen\.com
-RewriteRule (.*) http://www.samlouiscohen.com/$1 [R=301,L]
+RewriteEngine on
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
