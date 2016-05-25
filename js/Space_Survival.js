@@ -42,6 +42,7 @@ var mouseIsClicked = false;
 
 mouseClicked = function(){
     mouseIsClicked = true;
+
 }
 
 
