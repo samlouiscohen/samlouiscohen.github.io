@@ -1,9 +1,84 @@
 .projects{
+	border-bottom: none;
 
 
 /*	width:100%;
 	height:100vh;*/
 }
+
+.project{
+	background-color: red;
+	border: black solid;
+	border-radius: 10px;
+}
+.project:hover .proj-info{
+	visibility: visible;
+}
+
+.proj-info{
+	visibility: hidden;
+	
+	color: white;
+	position: absolute;
+	vertical-align: center;
+	width:100%;
+	height:100%;
+	top:-2.1vh;
+	/*bottom:-10px;*/
+	vertical-align: center;
+	opacity: 0.8;
+	background-color: #000066;
+}
+
+
+
+.proj1{
+	background-image: url("../images/fly_counter.png");
+	background-size: contain;
+	max-width: 100%;
+	max-height:100%;
+
+}
+#background{position:absolute; z-index:1; width:100%; height:100%;}
+.proj2{
+	background-image: url("../images/Density.png");
+	background-size: contain;
+/*	background-repeat: no-repeat;*/
+
+ /* position: absolute;*/
+
+	/*background-origin: center;*/
+/*	max-width: 100%;
+	max-height:100%;*/
+
+}
+
+
+.proj3{
+	background-image: url("../images/ss.png");
+	background-size: contain;
+/*	max-width: 100%;
+	max-height:100%;
+*/
+}
+
+.proj4{
+	background-image: url("../images/smells_gud.png");
+	background-size: contain;
+/*	max-width: 100%;
+	max-height:100%;*/
+
+}
+
+
+
+
+
+
+
+
+
+
 
 .projects-header{
 	font-family: Arial Rounded MT Bold;
@@ -12,6 +87,9 @@
 	margin-bottom: 0px;
 	text-decoration: underline;
 }
+
+a:visited { text-decoration: none; color:black; }
+a:hover { text-decoration: none; color:black; }
 
 
 
@@ -22,16 +100,30 @@
 }
 
 .row1{
-	background-color: red;
+	/*background-color: red;*/
+	margin-top: 5vh;
+	margin-bottom:3vh;
 }
 
 .row2{
-	background-color: green;
+	/*background-color: green;*/
 }
 
+.col{
+	position: absolute;
+	width:40%;
+	height:40%;
+	
+	/*margin: 10px;*/
+	/*margin:5%;*/
+}
 .col1{
+	left:8%;
+	/*background-color: yellow;*/
 
 }
 .col2{
-	
+	/*background-color: orange;*/
+	left:52%;
+	/*background-color:;*/
 }

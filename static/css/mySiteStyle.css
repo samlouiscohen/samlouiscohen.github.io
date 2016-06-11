@@ -53,6 +53,7 @@ strong{
 	text-decoration: underline;
 	font-size: 30px;
 	text-align: center;
+
 }
 
 .about-me-text{
@@ -77,6 +78,7 @@ strong{
 	font-size: 20px;
 	font-family: Arial Rounded MT Bold;
 	border-bottom: thin solid grey;
+	overflow: hidden;
 }
 
 #gradient{
