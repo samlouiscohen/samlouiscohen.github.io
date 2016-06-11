@@ -7,7 +7,7 @@
 	<!--The tidbit on the website's tab-->
 	<title>Samuel Cohen</title>
 	<!-- 16 by 16 pixel icon -->
-	<link rel="icon" href="myicon.ico"/>
+	<link rel="icon" href="../static/images/favicon.ico"/>
 
 	<!-- Misc.  -->
 	<meta charsey="UTF-8">
@@ -26,6 +26,9 @@
 
  <!-- run all the javascript stuff -->
  	<script src="/js/processing.min.js"></script>
+ 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+ 	<!-- Flip animation link -->
+	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 
 </head>
 
@@ -38,7 +41,7 @@
 		<div class="navBar">
 
 			<h2>
-				<a href="#projects" class="navBarItem">Developer</a> | <a href="#games" class="navBarItem">Philosopher</a> | <a href="#school" class="navBarItem"> Student</a>
+				<a href="#projects" class="navBarItem">Developer</a> | <a href="#games" class="navBarItem"><!-- Seeker/ -->Voyager<!-- /adventourer/questioner/wonderer/NotBeliveer-seeer?/reader --></a> | <a href="#school" class="navBarItem"> Student</a>
 			</h2>
 		</div>
 
@@ -62,13 +65,34 @@
 		<img src="../static/images/myface2.png" id="face">
 		<div class="about-me-text">
 			<h2 id="about-me-header">About me</h2>
-			<p class ="bio-line"> Hey there! My name is <strong>Sam</strong>. Hopefully you'll learn a little bit more about me, and maybe I'll even learn a little bit about <a href="mailto:slc2206@columbia.edu?Subject= Hey Sam, lets chat">you.</a></p>
 
+			<p class="bio-line">Hey there! My name is <strong>Sam</strong>. If you want to learn a little bit more about me, then you've come to the right place! Where to begin...</p>
+
+			<p class="bio-line">I'm currently a sophomore at <strong>Columbia University</strong> studying <strong>Computer Engineering</strong> with a possible minor in Entreprenourship & innovation. </p>
+
+			<p class="bio-line"> I first discoved
+
+
+				While I had originally started studying Aerospace Engineering, I soon discovered the power of programming by making my first video game during my Junior year of High school. 
+
+			<p class="bio-line">While I had originally started studying Aerospace Engineering, soon started playing around with Processing.js and before long I had my own video game. However, it was only when I interned last summer at <strong>Rockefeller University</strong> that I discovered the power and freedom affored by computer science.</p>
+			<p class="bio-line">I was was able to automate my job with a couple scripts that I wrote and the rest was history - I soon switched majors to Comp Sci.</p>
+
+
+
+				<!-- I quickly discovered the power and freedom affored by computer science when I made my first 'video game'-link-, and then was soon able to automate my job at my last internship at <strong>Rockefeller University</strong>. and I've been hooked ever since</p> -->
+
+			<p class="bio-line">I've always been facinated with our world - from the biologies of the creatures lurking in the depths of our oceans, to the gravitational symmetries of the ocean-holding moons of Jupiter - and I want to make my mark. </p>
+
+
+
+			<p class ="bio-line"> Hey there! My name is <strong>Sam</strong>. Hopefully you'll learn a little bit more about me, and maybe I'll even learn a little bit about <a href="mailto:slc2206@columbia.edu?Subject= Hey Sam, lets chat">you.</a></p>
+			<p>Love playing soccer, xbox, Settlers of Catan, I'm a vegetarian and a tree hugger</p>
 			<p>I'm currently a sophmore at <strong>Columbia University</strong> studying <strong>Computer Science</strong> with a possible minor in <strong>Philosophy</strong> or <strong>Entreprenourship and Innovation</strong>.</p>
 
 			<p class ="bio-line">From the alienesk creatures lurking in the depths of Earth's oceans, to the the mezmerizing symmetry of Jupiter's ocean-holding moons, I am constantly facinated by the world that we live in, and I want to make my mark on it. 
 			</p>
-			<!-- <p class ="bio-line">From the alienesk creatures lurking in the depths of Earth's oceans, to the the mezmerizing symmetry of Jupiter's ocean-holding moons, the world's a REALLY cool place, and I want to: take it all in /make my mark on it. 
+			<p class ="bio-line">From the alienesk creatures lurking in the depths of Earth's oceans, to the the mezmerizing symmetry of Jupiter's ocean-holding moons, the world's a REALLY cool place, and I want to: take it all in /make my mark on it. 
 
 			
 
@@ -87,10 +111,10 @@
 			<p class ="bio-line"> Some of my hobbies include: scanning the sky for distant nebula and the ocasional alien ship my Dobsonian XT10 SkyQuest telescope. </p>
 
 
-			<p>I'm currently a sophmore at <strong>Columbia University</strong> studying Computer Science with a possible minor in philosophy or Entreprenourship and Innovation.</p> -->
+			<p>I'm currently a sophmore at <strong>Columbia University</strong> studying Computer Science with a possible minor in philosophy or Entreprenourship and Innovation.</p>
 <!-- 
 
-
+			
 			<p class ="bio-line">I'm currently a sophmore at <strong>Columbia University</strong> studying Computer Science.</p>
 
 			
@@ -214,20 +238,34 @@
 
 
 	<div class="projects section">
-		<h1 class="projects-header">My Projects</h1>
+		<h1 class="projects-header"><a href="https://github.com/samlouiscohen">My Projects</a></h1>
 
 
 		<div class="row row1">
-			<div class = "col1 project proj1"></div>
-			<div class = "col2 project proj2"></div>
+
+			<div class = " col col1 project proj1">
+				<!-- <div>front content</div>
+				<div>back content</div> -->
+				<p class="proj-info">Worked on a image processing application using Matlab</p>
+			</div>
+			<div class = "col col2 project proj2">
+				<p class="proj-info">Density project</p>
+			</div>
+			
 		</div>
 
 		<div class="row row2">
-			<div class = "col1 project proj3"></div>
-			<div class = "col2 project proj4"></div>
+			<div class = "col col1 project proj3">
+				<a href="#space">
+				<p class="proj-info">Space Survival project</p>
+				</a>
+			</div>
+			<div class = "col col2 project proj4">
+				<p class="proj-info">Smells Gud Project</p>
+			</div>
 		</div>
 
-
+<!-- 		<p>Check out https://github.com/samlouiscohen for more</p> -->
 
 	</div>
 
