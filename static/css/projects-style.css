@@ -10,6 +10,7 @@
 	background-color: red;
 	border: black solid;
 	border-radius: 10px;
+	background-size: 100% 100%;
 }
 .project:hover .proj-info{
 	visibility: visible;
@@ -23,52 +24,22 @@
 	vertical-align: center;
 	width:100%;
 	height:100%;
-	top:-2.1vh;
-	/*bottom:-10px;*/
-	vertical-align: center;
 	opacity: 0.8;
 	background-color: #000066;
+
+
+}
+
+.proj-header{
+	text-align: center;
 }
 
 
 
-.proj1{
-	background-image: url("../images/fly_counter.png");
-	background-size: contain;
-	max-width: 100%;
-	max-height:100%;
-
-}
-#background{position:absolute; z-index:1; width:100%; height:100%;}
-.proj2{
-	background-image: url("../images/Density.png");
-	background-size: contain;
-/*	background-repeat: no-repeat;*/
-
- /* position: absolute;*/
-
-	/*background-origin: center;*/
-/*	max-width: 100%;
-	max-height:100%;*/
-
-}
-
-
-.proj3{
-	background-image: url("../images/ss.png");
-	background-size: contain;
-/*	max-width: 100%;
-	max-height:100%;
-*/
-}
-
-.proj4{
-	background-image: url("../images/smells_gud.png");
-	background-size: contain;
-/*	max-width: 100%;
-	max-height:100%;*/
-
-}
+.proj1{background-image: url("../images/fly_counter.png");}
+.proj2{background-image: url("../images/dd.png");}
+.proj3{background-image: url("../images/ss.png");}
+.proj4{background-image: url("../images/Density.png");}
 
 
 

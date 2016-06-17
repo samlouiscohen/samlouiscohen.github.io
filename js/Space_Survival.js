@@ -40,11 +40,16 @@ var mouseIsClicked = false;
 //     mouseIsPressed = false;
 // };
 
+//A processing.js specific function, recognizes mouse clicks
 mouseClicked = function(){
+    console.log(mouseIsClicked);
     mouseIsClicked = true;
+    console.log(mouseIsClicked);
+    // mouseIsClicked = false;
 
 }
 
+/*A series of game state variables*/
 
 //timing variables
 var minutes=0;
@@ -59,12 +64,7 @@ var bossesKilled=0;
 var firedLasers=0;
 var missedLasers=0;
 
-//Function to check what array the shot or hit alien is in
-var checkAlien=function(arrayType,key){
-    if(arrayType.indexOf(key)>=0){
-        arrayType.splice(arrayType.indexOf(key),1);
-    }        
-};
+
 //Game States
 var gameOn=false;
 var gameState="titleScreen";
@@ -94,7 +94,20 @@ var numStars=200;
 var moons=[];
 var numMoons=50;
 
-//Projectile Object
+
+/*checkAlien removes an alien from a specific type array if there are any*/
+var checkAlien=function(arrayType, key){
+    if(arrayType.indexOf(key) >= 0){
+        arrayType.splice(arrayType.indexOf(key),1);
+    }        
+};
+
+                        /**All spaceship code**/
+
+/**
+ *Projectile is an object of the main ship object that holds location, speed, size, and color of 
+ *the ship's given projctile
+ */
 var Projectile = function(x,y,dx,dy,width,height) {
     this.x = x;
     this.y = y;
@@ -153,6 +166,7 @@ var BasicLaser = function(x,y,dx,dy,width,height){
     Projectile.call(this,x,y,dx,dy,width,height);
 };
 
+//Basic laser is a new obkect
 BasicLaser.prototype = Object.create(Projectile.prototype);
 
 BasicLaser.prototype.draw= function() {
@@ -349,8 +363,6 @@ Alien.prototype.move=function(){
 };
 
 Alien.prototype.bound=function(){
-
-    
     
     if(this.alienY>500){
         this.alienY=-100;

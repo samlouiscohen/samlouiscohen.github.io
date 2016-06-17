@@ -44,7 +44,7 @@ strong{
 	
 	width:15%;
 	margin: 20px;
-	left: 10%;
+	left: 3%;
 	top:10%;
 /*	padding: 10px;
 */}
@@ -60,13 +60,14 @@ strong{
 
 	position: relative;
 	font-size: 25px;
-	width:50%;
-	left:33%;
+	width:70%;
+	left:24%;
 
 }
 
 #bio-line{
 	font-weight: 400;
+
 }
 
 .aboutme{
