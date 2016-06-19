@@ -25,6 +25,21 @@
 	<link href='https://fonts.googleapis.com/css?family=Nunito|Inconsolata|Noto+Serif|Merriweather|PT+Sans+Narrow|Hind|Lato' rel='stylesheet' type='text/css'>
 
  <!-- run all the javascript stuff -->
+
+	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	  	apiKey: "AIzaSyDY83ogkrweOapfQSZvu75LLMCPos9oCIY",
+	    authDomain: "space-survival.firebaseapp.com",
+	    databaseURL: "https://space-survival.firebaseio.com",
+	    storageBucket: "space-survival.appspot.com",
+	  };
+	  firebase.initializeApp(config);
+	</script>
+    
+
+
  	<script src="/js/processing.min.js"></script>
  	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
  	<!-- Flip animation link -->
@@ -68,15 +83,43 @@
 
 			<p class="bio-line">Hey there! My name is <strong>Sam</strong>. If you want to learn a little bit more about me, then you've come to the right place! Where to begin...</p>
 
-			<p class="bio-line">I'm currently a sophomore at <strong>Columbia University</strong> studying <strong>Computer Engineering</strong> with a possible minor in Entreprenourship & innovation. </p>
+			<p class="bio-line">I'm a <strong>huge</strong> science geek, a soccer player, a track runner, a lover of all things Xbox, a tree hugger, and a star gazer. Currently, I'm a sophomore at <strong>Columbia University</strong> studying <strong>Computer Engineering</strong> with a possible minor in Entreprenourship & innovation.</p>
+<!-- 
+			<p class="bio-line">Currently, I'm a sophomore at <strong>Columbia University</strong> studying <strong>Computer Engineering</strong> with a possible minor in Entreprenourship & innovation.</p> -->
+			<p class="bio-line">From the biologies of the creatures lurking in the depths of our oceans, to the gravitational symmetries of the ocean-holding moons of Jupiter, I've always been facinated with our world and I want to make my mark. </p>
 
-			<p class="bio-line"> I first discoved
+	<!-- 		<p class="bio-line">I've always been facinated with our world - from the biologies of the creatures lurking in the depths of our oceans, to the gravitational symmetries of the ocean-holding moons of Jupiter - and I want to make my mark. </p>
+ -->
+			<p class="bio-line">As of now, I see machine learning as the future solution to just about every imaginable problem. From creating self-driving cars, to programming the world's best doctors, artifical intellginece offers unparalleled opportunity. As of now, I see myself focusing in this field.</p>
+
+			<p class="bio-line">Feel free to reach out if you'd like to discuss possible opportunities in software engineering or research. I'm also always interested in a good chat- whether it be about the eventual eutopia, or dystopia, resulting from intelligent machines, the afterlife, or lack there of, the possiblity of alien life, or really anything else that's new and exciting, you can reach me <a href="mailto:slc2206@columbia.edu?Subject= Hey Sam"> here</a>.</p>
+
+			
+
+<!-- 
+897sd8sad098f7s8d7gf809s7dg89sd7g897sd890g7s89d7fg980sd7fg980sd-->
+			<p class="bio-line">Ever since I can remember I've been a science geek- abandoning netflix in favor of Wired, creating video games when I wasn't playing them, and spending hours staring at the planets through my telescope. </p>
+
+			<p class="bio-line">I've always been facinated with our world - from the biologies of the creatures lurking in the depths of our oceans, to the gravitational symmetries of the ocean-holding moons of Jupiter - and I want to make my mark. </p>
+
+			<!--////////-->
+
+			  when I wasn't playing them. While I wasn't sure what path I wanted to take, it was only after my Freshman summer internship, when I wrote a Matlab Script to automate one of my jobs at Rockefeller University, that I finally appricaited the power of computer science.
+
+			<p class="bio-line">I've always been facinated with our world - from the biologies of the creatures lurking in the depths of our oceans, to the gravitational symmetries of the ocean-holding moons of Jupiter - and I want to make my mark. </p>
 
 
-				While I had originally started studying Aerospace Engineering, I soon discovered the power of programming by making my first video game during my Junior year of High school. 
+
+
+
+
+
+
 
 			<p class="bio-line">While I had originally started studying Aerospace Engineering, soon started playing around with Processing.js and before long I had my own video game. However, it was only when I interned last summer at <strong>Rockefeller University</strong> that I discovered the power and freedom affored by computer science.</p>
 			<p class="bio-line">I was was able to automate my job with a couple scripts that I wrote and the rest was history - I soon switched majors to Comp Sci.</p>
+
+
 
 
 
@@ -246,10 +289,25 @@
 			<div class = " col col1 project proj1">
 				<!-- <div>front content</div>
 				<div>back content</div> -->
-				<p class="proj-info">Worked on a image processing application using Matlab</p>
+				<div class="proj-info">
+					<h1 class="proj-header">"ELE auto-stamper"</h1>
+					<p class="proj-bullet">Worked on a image processing application using Matlab</p>
+					<p class="proj-bullet">Team size: 1</p>
+					<p class="proj-bullet">Technologies used: </p>
+
+				</div>
 			</div>
 			<div class = "col col2 project proj2">
-				<p class="proj-info">Density project</p>
+				<div class="proj-info">
+					<h1 class="proj-header">"Smells Gud"</h1>
+					<p class="proj-bullet">Developed at University of Pennsylvania's "Penn Apps". This webapp allows student users to enter their meal preferences, such as favorite foods or dietary restrictions. </p>
+					<p>We found that kids werent using the website, and by removing one more layer of difficlty we</p>
+					<p class="proj-bullet">With this information, the web app generates a reccomended dining hall for the particular day, and notifies the user (A columbia Student).</p>
+					<p class="proj-bullet">Team size: 2</p>
+					<p class="proj-bullet">Technologies used: </p>
+
+
+				</div>
 			</div>
 			
 		</div>
@@ -257,11 +315,28 @@
 		<div class="row row2">
 			<div class = "col col1 project proj3">
 				<a href="#space">
-				<p class="proj-info">Space Survival project</p>
+				<div class="proj-info">					
+					<h1 class="proj-header">"Space Survival"</h1>
+					<p class="proj-bullet">My very first coding project that I worked on throughout my Junior year of Highschool. <p>
+					<p class="proj-bullet">Space Survival includes a variety of alien species to battle, multiple power-ups, and even a boss level to spice things up.</p>
+						<p class="proj-bullet">Team size: 1</p>
+
+					<p class="proj-bullet">Technologies used: </p>
+				</div>
 				</a>
 			</div>
 			<div class = "col col2 project proj4">
-				<p class="proj-info">Smells Gud Project</p>
+				<div class="proj-info">
+					
+					<h1 class="proj-header">"Density"</h1>
+					<p class="proj-bullet">Worked on both front and backend design. Implemented basic machine learning techniques such as linear regression.</p>
+					<p class="proj-bullet">Team size: 4</p>
+					<p class="proj-bullet">Technologies used: </p>
+
+
+				</div>
+
+				<!-- <p class="proj-info">Smells Gud Project</p> -->
 			</div>
 		</div>
 
