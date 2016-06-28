@@ -28,7 +28,7 @@ header{
 strong{
 	font-weight:bold;
 	font-weight: 800;
-	font-size: 28px;
+	font-size: 35px;
 }
 
 
@@ -39,29 +39,44 @@ strong{
 
 }
 
-#face{
+/*#face{
 	position: absolute;
 	
 	width:15%;
 	margin: 20px;
 	left: 3%;
 	top:10%;
-/*	padding: 10px;
-*/}
+}*/
+#face{
+	position: absolute;
+	
+	width:15%;
+	margin: 20px;
+	left: 5%;
+	top:15%;
+}
 
 #about-me-header{
 	text-decoration: underline;
-	font-size: 30px;
+	font-size: 40px;
 	text-align: center;
 
 }
 
-.about-me-text{
+/*.about-me-text{
 
 	position: relative;
 	font-size: 25px;
 	width:70%;
 	left:24%;
+
+}*/
+.about-me-text{
+
+	position: relative;
+	font-size: 30px;
+	width:60%;
+	left:28%;
 
 }
 

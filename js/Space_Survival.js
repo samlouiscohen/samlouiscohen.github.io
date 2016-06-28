@@ -440,7 +440,7 @@ normAlien.prototype.draw= function() {
     this.bound();
     this.move();
     this.collision();
-    this.shot();
+    // this.shot();
 };
 /** Down Aliens or 2s**/
 

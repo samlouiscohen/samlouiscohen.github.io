@@ -34,6 +34,21 @@
 	text-align: center;
 }
 
+.proj-description{
+	font-size: 1.5vw;
+	color:white;
+}
+.proj-bullet{
+	font-size: 1.2vw;
+	color: gray;
+
+	
+}
+
+.proj-bullet-ans{
+	font-size: 1.3vw;
+	color:white;
+}
 
 
 .proj1{background-image: url("../images/fly_counter.png");}
