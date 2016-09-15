@@ -38,6 +38,17 @@
 	  firebase.initializeApp(config);
 	</script>
     
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-81407481-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+
 
 
  	<script src="/js/processing.min.js"></script>
@@ -47,11 +58,11 @@
 
 </head>
 
-<body id="container">
-<!-- <body> -->
+
+<body>
 
 	<header>
-		<h1 class="myName">Samuel L. Cohen</h1>
+		<h1 class="myName">Samuel Cohen</h1>
 
 		<div class="navBar">
 
@@ -94,10 +105,10 @@
 
 			<p class="bio-line">Hey there! My name is <strong>Sam</strong>. If you want to learn a little bit more about me, then you've come to the right place! Where to begin...</p>
 
-			<p class="bio-line">I'm a <!-- <strong>huge</strong> --> science fanatic<!-- (everything from evolutionary biology to systems programming) -->, a soccer player, a track runner, a lover of all things Xbox, a vegetarian, a tree hugger, and a star gazer. Currently, I'm a sophomore at <strong>Columbia University</strong> studying <strong>Computer Engineering</strong> with a possible minor in Entreprenourship & innovation.</p>
+			<p class="bio-line">I'm a <!-- <strong>huge</strong> --> science fanatic<!-- (everything from evolutionary biology to systems programming) -->, a soccer player, a track runner, a lover of all things Xbox, a vegetarian, a tree hugger, and a star gazer. Currently, I'm a Junior at <strong>Columbia University</strong> studying <strong>Computer Engineering</strong> with a possible minor in Entreprenourship & innovation.</p>
 
 
-				<p class="bio-line">Feel free to <a href="mailto:slc2206@columbia.edu?Subject= Hey Sam"> reach out</a><!-- reach out --> if you'd like to discuss possible opportunities in software engineering or research. I'm also always interested in a good chat- whether it be about the eventual eutopia, or dystopia, resulting from intelligent machines, the afterlife, or lack there of, the possiblity of alien life, or really anything else that's new and exciting.<!-- - you can reach me <a href="mailto:slc2206@columbia.edu?Subject= Hey Sam"> here</a> --></p>
+			<p class="bio-line">Feel free to <a href="mailto:slc2206@columbia.edu?Subject= Hey Sam"> reach out</a><!-- reach out --> if you'd like to discuss possible opportunities in software engineering or research. I'm also always interested in a good chat- whether it be about the eventual eutopia, or dystopia, resulting from intelligent machines, the afterlife, or lack there of, the possiblity of alien life, or really anything else that's new and exciting.<!-- - you can reach me <a href="mailto:slc2206@columbia.edu?Subject= Hey Sam"> here</a> --></p>
 
 
 
@@ -397,7 +408,11 @@
 	<div id="Space_Survival_container">
 		<h3>Games</h3>
 
-	
+<!-- 		<h1 id="game-header">While you're here,</h1>
+		<h1 id="game-header">take a load off and play a game that I wrote a couple years back!</h1> -->
+
+
+
 		<img src="../static/images/myface.png" class="myface">
 
  		<canvas data-processing-sources="/js/Space_Survival.js" id="game_canvas"></canvas>
@@ -459,6 +474,7 @@
 
 <!-- 		<p>hello</p>
  -->
+
 
 
 

@@ -161,6 +161,15 @@ strong{
 	left:50%;*/
 }
 
+#game-header{
+
+	color:white;
+	font-size: 1vw;
+	font-family: Arial Rounded MT Bold;
+ 
+}
+
+
 .myName{
 	color:black;
 	font-family: 'Lato', sans-serif;
