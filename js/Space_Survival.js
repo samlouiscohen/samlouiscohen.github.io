@@ -1074,14 +1074,14 @@ var drawTitleScreen=function(){
         fill(0, 0, 0);
         rect(x-10,y+10,20,3);
         fill(235, 235, 235);
-        ellipse(x+-50,y+-50,100,60);
+        ellipse(x+-50,y+-50,120,72);
         fill(0, 0, 0);
         noFill();
         strokeWeight(3);
         rect(x+1,y+-11,18,18);
         rect(x+-22,y+-11,18,18);
         line(x-5,y,x+5,y);
-        text("      Click me to\n           Learn!",x-100,y-50);
+        text("      Click me to learn \n          how to play!",x-115,y-50);
         strokeWeight(1);
     };
     
@@ -1100,14 +1100,14 @@ var drawTitleScreen=function(){
         fill(0, 0, 0);
         ellipse(x,y+15,20,10);
         fill(235, 235, 235);
-        ellipse(x+-50,y+-50,100,60);
+        ellipse(x+-50,y+-50,120,72);
         fill(0, 0, 0);
         noFill();
         strokeWeight(3);
         rect(x+1,y+-11,18,18);
         rect(x+-22,y+-11,18,18);
         line(x-3,y,x+2,y);
-        text("      Click me to\n           Learn!",x-100,y-50);
+        text("      Click me to learn \n          how to play!",x-115,y-50);
         strokeWeight(1);
     };
     

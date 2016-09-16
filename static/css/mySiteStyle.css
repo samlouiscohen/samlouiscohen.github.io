@@ -161,8 +161,18 @@ strong{
 	left:50%;*/
 }
 
+#game-intro{
+	background-color: black;
+	height:5vh;
+	width:100%;
+	
+	text-align: center;
+	font-family: Arial Rounded MT Bold;
+	font-size: 2vw;
+	color: white;
+}
 #game-header{
-
+	text-align: center;
 	color:white;
 	font-size: 1vw;
 	font-family: Arial Rounded MT Bold;
@@ -242,6 +252,13 @@ strong{
 	position:absolute;
 	left:80%;
 	transform:rotate(40deg);
+}
+.earthFlag{
+	width: 15%;
+
+	position:absolute;
+	left:80%;
+	top:10%;
 }
 
 .icon{
