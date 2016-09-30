@@ -129,8 +129,9 @@ strong{
 	width:100%;
 	
 	font-family: Arial Rounded MT Bold;
-/*	border-bottom: thin solid grey;
-*/	/*overflow: hidden;*/
+	border-bottom: thin solid grey;
+	border-top: thin solid grey;
+	/*overflow: hidden;*/
 }
 
 .boldWord{
