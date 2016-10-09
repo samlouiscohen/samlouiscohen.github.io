@@ -177,6 +177,16 @@ strong{
 	font-size: 2vw;
 	color: white;
 }
+#game-intro2{
+	background-color: black;
+	height:5vh;
+	width:100%;
+	
+	text-align: center;
+	font-family: Arial Rounded MT Bold;
+	font-size: 1vw;
+	color: white;
+}
 #game-header{
 	text-align: center;
 	color:white;
