@@ -228,6 +228,7 @@ strong{
 }
 
 .iconContainer{
+	/*background-color: red;*/
 	position: relative;
 	/*background-color:purple;*/
 	width:40%;
@@ -245,15 +246,17 @@ strong{
 }
 
 .linkedinI{
-	margin-right: 5%;
+	margin-right: 0%;
 	/*position:absolute;*/
 /*	top:15%;
 	left:35%;*/
 }
 
 .mailI{
-	margin-right: 5%;
-	/*position:absolute;*/
+	margin-right: 0%;
+	margin-left: 5%;
+/*	margin-right: 5%;
+*/	/*position:absolute;*/
 /*	top:15%;
 	left:50%;*/
 }
