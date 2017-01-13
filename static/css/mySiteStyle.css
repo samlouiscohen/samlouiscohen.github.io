@@ -207,6 +207,7 @@ strong{
 
 /*Essentially container*/
 .navBar{
+	position: relative;
 	font-size: 30px;
 	font-weight: 10px;
 	margin:0 auto;
@@ -231,6 +232,7 @@ strong{
 	/*background-color: red;*/
 	position: relative;
 	/*background-color:purple;*/
+	/*top:10%;*/
 	width:40%;
 	height:10%;
 	margin:0 auto;
