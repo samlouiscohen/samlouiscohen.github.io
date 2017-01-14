@@ -222,7 +222,7 @@ strong{
 	font-family: 'Lato', sans-serif;
 }
 
-.navBarItem:hover{
+.navBarItemLink:hover{
 	font-size: 50px;
 
 	color:blue;
